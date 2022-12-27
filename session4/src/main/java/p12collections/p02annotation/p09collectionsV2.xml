@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+">
+
+
+   <context:component-scan base-package="p12collections"/>
+
+   <util:map id="map" map-class="java.util.HashMap">
+       <entry key="key1" value="key1"/>
+       <entry key="key2" value="key2"/>
+   </util:map>
+
+    <util:properties id="props">
+        <prop key="firstName">Ali</prop>
+        <prop key="LastName">rezaee</prop>
+    </util:properties>
+
+    <util:set id="set" set-class="java.util.HashSet">
+        <value>Hello Java</value>
+        <value>Hello Java2</value>
+        <ref bean="holder"/>
+    </util:set>
+
+    <util:list id="list" list-class="java.util.ArrayList">
+        <value>hello list</value>
+        <ref bean="holder"/>
+    </util:list>
+
+
+    <bean id="holder" class="p12collections.p02annotation.C03StringHolder"/>
+</beans>

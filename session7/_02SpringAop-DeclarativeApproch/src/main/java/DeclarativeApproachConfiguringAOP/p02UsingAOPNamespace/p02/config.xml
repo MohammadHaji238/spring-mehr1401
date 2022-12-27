@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/aop
+       https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--  <context:annotation-config/>-->
+    <aop:aspectj-autoproxy/>
+
+
+    <!-- Configure Employee Bean and initialize it -->
+    <bean name="employee" class="DeclarativeApproachConfiguringAOP.p02UsingAOPNamespace.p02.Employee"
+          p:name="Mahsa"
+    />
+
+
+    <!-- Configure EmployeeService bean -->
+    <bean name="employeeService" class="DeclarativeApproachConfiguringAOP.p02UsingAOPNamespace.p02.EmployeeService"
+    p:employee-ref="employee"/>
+
+
+    <bean id="employeeAspect" class="DeclarativeApproachConfiguringAOP.p02UsingAOPNamespace.p02.EmployeeAspect"/>
+
+   <!-- <aop:config>
+        <aop:pointcut id="beforeFind" expression="execution(* DeclarativeApproachConfiguringAOP.p02UsingAOPNamespace.p02.EmployeeService.findEmployee())"/>
+        <aop:aspect id="employeeAspect" ref="employeeAspect">
+             <aop:before method="beforeFindEmployeeAdvice1" pointcut-ref="beforeFind" />
+        </aop:aspect>
+    </aop:config>-->
+
+   <!-- <aop:config>
+        <aop:aspect ref="employeeAspect">
+            <aop:pointcut id="nezartRoaAterFindById" expression="execution(* DeclarativeApproachConfiguringAOP.p02UsingAOPNamespace.p02.EmployeeService.findEmployeeById(..))"/>
+            <aop:after-returning method="afterfindByIdEmployeeAdvice2" pointcut-ref="nezartRoaAterFindById" returning="result"/>
+        </aop:aspect>
+    </aop:config>-->
+
+    <aop:config>
+        <aop:pointcut id="nezarat1" expression="execution(* DeclarativeApproachConfiguringAOP.p02UsingAOPNamespace.p02.EmployeeService.createEmployee(..))"/>
+        <aop:pointcut id="nezarat2" expression="execution(Integer DeclarativeApproachConfiguringAOP.p02UsingAOPNamespace.p02..*(..))"/>  <!--for method with argument-->
+        <aop:aspect id="employeeAspect" ref="employeeAspect">
+           <aop:around method="createEmployeeAdvice" pointcut-ref="nezarat2"/>
+        </aop:aspect>
+    </aop:config>
+
+ <!--   <aop:config>
+        <aop:aspect ref="employeeAspect">
+            <aop:pointcut id="nezartRoDelete" expression="execution(* DeclarativeApproachConfiguringAOP.p02UsingAOPNamespace.p02.EmployeeService.deleteEmployee(..))"/>
+            <aop:around method="deleteEmployee" pointcut-ref="nezartRoDelete"/>
+        </aop:aspect>
+    </aop:config>-->
+
+   <!-- <aop:config>
+        <aop:aspect ref="employeeAspect">
+            <aop:pointcut id="nezartRoFind" expression="execution(* DeclarativeApproachConfiguringAOP.p02UsingAOPNamespace.p02.EmployeeService.findEmployee())"/>
+            <aop:after-returning method="afterfindByIdEmployeeAdvice2" pointcut-ref="nezartRoFind" returning="result"/>
+        </aop:aspect>
+    </aop:config>-->
+
+
+   <!-- <aop:config>
+        <aop:aspect ref="employeeAspect">
+            <aop:pointcut id="khatapointcut" expression="execution(* DeclarativeApproachConfiguringAOP.p02UsingAOPNamespace.p02.EmployeeService.errorrrrrr(..))"/>
+            <aop:after-throwing method="khata" pointcut-ref="khatapointcut" throwing="e"/>
+        </aop:aspect>
+    </aop:config>-->
+
+
+
+    <!--rah 2   pointcut ro ovordi birone aspect -->
+    <!--  <aop:config>
+          <aop:pointcut id="employeeAspect1" expression="execution(* ir.digixo.aop.EmployeeService.createEmployee(..))"/>
+          <aop:aspect id="managerAspect2" ref="employeeAspect">
+              <aop:before method="createEmployee" pointcut-ref="employeeAspect1"/>
+          </aop:aspect>
+      </aop:config>-->
+</beans>

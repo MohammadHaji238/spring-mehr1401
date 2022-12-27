@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+    <bean id="complexObject" class="p12collections.p01xml.C01CollectionBean">
+        <!-- results in a setAdminEmails(java.util.Properties) call -->
+        <!--<property name="prop">
+            <props>
+                <prop key="administrator">administrator@example.org</prop>
+                <prop key="support">support@example.org</prop>
+                <prop key="development">development@example.org</prop>
+            </props>
+        </property>-->
+
+        <!--or-->
+        <property name="prop">
+            <value>
+                administrator=administrator@example.org
+                support=support@example.org
+            </value>
+        </property>
+        <!-- results in a setSomeList(java.util.List) call -->
+        <property name="lists">
+            <list>
+                <value>a list element followed by a reference</value>
+                <value>val2</value>
+                <!--<ref bean="myDataSource" />-->
+            </list>
+        </property>
+        <!-- results in a setSomeMap(java.util.Map) call -->
+        <property name="maps">
+            <map>
+                <entry key="an entry" value="just some string"/>
+                <entry key="key2" value="value2"/>
+               <!-- <entry key="a ref" value-ref="myDataSource"/>-->
+            </map>
+        </property>
+        <!-- results in a setSomeSet(java.util.Set) call -->
+        <property name="sets">
+            <set>
+                <value>just some string</value>
+                <value>ddddd</value>
+               <!-- <ref bean="myDataSource" />-->
+            </set>
+        </property>
+    </bean>
+
+
+</beans>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+">
+
+
+
+  <bean id="productDao" class="p02BeanScopes.p01singleton.p01xml.ProductDao" scope="singleton"/>
+
+
+
+    <bean id="productService1" class="p02BeanScopes.p01singleton.p01xml.ProductService"
+          p:productDao-ref="productDao"/>
+    <bean id="productService2" class="p02BeanScopes.p01singleton.p01xml.ProductService"
+          p:productDao-ref="productDao"/>
+    <bean id="productService3" class="p02BeanScopes.p01singleton.p01xml.ProductService"
+          p:productDao-ref="productDao"/>
+</beans>

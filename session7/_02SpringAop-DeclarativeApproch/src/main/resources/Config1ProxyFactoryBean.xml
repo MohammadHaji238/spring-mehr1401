@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util.xsd
+
+">
+
+    <bean class="DeclarativeApproachConfiguringAOP.p01UsingProxyFactoryBean.JavaProgrammer"
+          id="hasan"/>
+
+    <bean class="DeclarativeApproachConfiguringAOP.p01UsingProxyFactoryBean.AduitAdvice"
+          id="advice"/>
+
+    <bean class="DeclarativeApproachConfiguringAOP.p01UsingProxyFactoryBean.Office"
+          id="office"
+    p:javaProgrammer-ref="proxyTwo"/>
+
+
+<!--     proxyOne will just advise the target by using the advice directly; thus, all methods will be advised.-->
+    <bean id="proxyOne" class="org.springframework.aop.framework.ProxyFactoryBean"
+          p:target-ref="hasan"
+          p:interceptorNames-ref="interceptorAdviceNames"
+    />
+    <util:list id="interceptorAdviceNames">
+        <value>advice</value>
+    </util:list>
+
+
+
+
+
+
+
+
+
+
+
+
+    <bean id="proxyTwo" class="org.springframework.aop.framework.ProxyFactoryBean"
+          p:target-ref="hasan"
+          p:interceptorNames-ref="interceptorAdvisorNames"
+    />
+
+
+    <util:list id="interceptorAdvisorNames">
+        <value>advisor</value>
+    </util:list>
+
+    <bean id="advisor"
+          class="org.springframework.aop.support.DefaultPointcutAdvisor"
+          p:advice-ref="advice">
+        <property name="pointcut">
+            <bean class="org.springframework.aop.aspectj.AspectJExpressionPointcut"
+                  p:expression="execution(* talk*(..))"
+            />
+        </property>
+    </bean>
+</beans>

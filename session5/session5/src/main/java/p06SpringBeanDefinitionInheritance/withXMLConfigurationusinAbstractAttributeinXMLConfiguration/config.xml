@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+">
+
+
+
+    <bean id="animal" class="p06SpringBeanDefinitionInheritance.withXMLConfigurationusinAbstractAttributeinXMLConfiguration.Animal" abstract="true" init-method="initA">
+       <property name="name" value="miomio"/>
+        <property name="age" value="2"/>
+     </bean>
+
+    <bean id="cat" class="p06SpringBeanDefinitionInheritance.withXMLConfigurationusinAbstractAttributeinXMLConfiguration.Cat" parent="animal" init-method="initA">
+        <property name="location" value="tehran"/>
+        <property name="age" value="12"/>
+    </bean>
+
+  <!--  <bean id="dog" class="p06SpringBeanDefinitionInheritance.withXMLConfigurationusinAbstractAttributeinXMLConfiguration.Dog" parent="animal" >
+        <property name="age" value="12"/>
+    </bean>-->
+
+</beans>

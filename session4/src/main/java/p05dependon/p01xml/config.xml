@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+    <bean class="p05dependon.p01xml.BeanOne" id="beanOne" lazy-init="true" depends-on="beanTwo,beanThree"/>
+    <bean class="p05dependon.p01xml.BeanTwo" id="beanTwo" lazy-init="true"/>
+    <bean class="p05dependon.p01xml.BeanThree" id="beanThree" lazy-init="true"/>
+
+
+</beans>
