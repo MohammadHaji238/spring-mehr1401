@@ -10,20 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5188d64b-9593-46df-bba9-460856f4a7c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/anisa/config/MainWebAppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/anisa/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../session14/session14/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../session14/session14/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../session14/session14/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../session14/session14/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../session14/session14/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../session14/session14/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../session14/session14/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../session14/session14/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../session14/session14/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../session14/session14/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../session10" beforeDir="false" afterPath="$PROJECT_DIR$/../../session10" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../session12/firstSpringWebClassConfig/src/main/java/com/anisa/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../session12/firstSpringWebClassConfig/src/main/java/com/anisa/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +65,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Admin/IdeaProjects/spring/5/session13/session13/src/main/java/com/anisa"
+    "last_opened_file_path": "C:/Users/Admin/IdeaProjects/spring/5/session14/ApplicationScopeDemo",
+    "spring.configuration.checksum": "dbad521b6d7835ad14c74584966ac862"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -177,7 +176,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674567023353</updated>
-      <workItem from="1674567024888" duration="13358000" />
+      <workItem from="1674567024888" duration="13482000" />
+      <workItem from="1674624115819" duration="616000" />
+      <workItem from="1674631533544" duration="1168000" />
+      <workItem from="1675171016288" duration="1476000" />
     </task>
     <servers />
   </component>
