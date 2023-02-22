@@ -85,7 +85,7 @@ public class WebConfig implements WebMvcConfigurer {
         };
     }*/
 
-   /* @Bean
+    @Bean
     public HandlerExceptionResolver handlerExceptionResolver()
     {
         SimpleMappingExceptionResolver resolver=new SimpleMappingExceptionResolver();
@@ -93,17 +93,23 @@ public class WebConfig implements WebMvcConfigurer {
 
         //mapping based on error
         Properties mapping=new Properties();
-        mapping.put("java.lang.NullPointerException","error1");
-        mapping.put("java.lang.ArithmeticException","error2");
+        mapping.put("java.lang.ArithmeticException","error1");
+      //  mapping.put("java.lang.NullPointerException","error2");
         //mapping base on statusCode
-        Properties mapping2=new Properties();
-        mapping2.put("error-page","400");
-        mapping2.put("error-page2","500");
+        Properties statusCodes = new Properties();
+        statusCodes.put("error-page", "400");
+        statusCodes.put("NullPointerExceptionPage", "500");
+
+
+        resolver.setStatusCodes(statusCodes);
 
         resolver.setExceptionMappings(mapping);
+        resolver.setDefaultErrorView("default-error-page");
+
+      
 
         return resolver;
-    }*/
+    }
 
 
     //4

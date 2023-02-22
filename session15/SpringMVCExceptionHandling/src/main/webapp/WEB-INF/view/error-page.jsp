@@ -11,6 +11,7 @@
     <title>Title</title>
 </head>
 <body>
+error-page
 error is : ${exceptionType}
 </body>
 </html>

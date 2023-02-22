@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
 @Controller
 @RequestMapping("/")
 public class C02ExceptionHandler {
@@ -27,9 +30,10 @@ public class C02ExceptionHandler {
     }*/
 
     @GetMapping("/two")
-    public void createError()
-    {
-        throw new NullPointerException("khali bod 2");
+    public void createError(HttpServletResponse response) throws IOException {
+
+        response.sendError(500,"dfdfdf");
+       // throw new NullPointerException("khali bod 2");
     }
     @GetMapping("/4")
     public void createError2() throws Exception {
