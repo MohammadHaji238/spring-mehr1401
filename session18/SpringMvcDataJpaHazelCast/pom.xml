@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.anisa</groupId>
-    <artifactId>SpringMvcDataJpa</artifactId>
+    <artifactId>SpringMvcDataJpaHazelCast</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>SpringMvcDataJpa</name>
-    <description>SpringMvcDataJpa</description>
+    <name>SpringMvcDataJpaHazelCast</name>
+    <description>SpringMvcDataJpaHazelCast</description>
     <packaging>jar</packaging>
     <properties>
         <java.version>17</java.version>
@@ -66,16 +66,23 @@
         </dependency>
 
 
-        <!-- https://mvnrepository.com/artifact/org.ehcache/ehcache -->
+
         <dependency>
-            <groupId>org.ehcache</groupId>
-            <artifactId>ehcache</artifactId>
-            <scope>runtime</scope>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.hazelcast/hazelcast -->
         <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-jcache</artifactId>
+            <groupId>com.hazelcast</groupId>
+            <artifactId>hazelcast</artifactId>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.hazelcast/hazelcast-spring -->
+        <dependency>
+            <groupId>com.hazelcast</groupId>
+            <artifactId>hazelcast-spring</artifactId>
+        </dependency>
+
+
 
     </dependencies>
 
