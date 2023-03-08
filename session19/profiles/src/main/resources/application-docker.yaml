@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+
+
+spring:
+  datasource:
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysql-docker:3306/myspringdata
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: info
+  file:
+    name: logs/application.log
