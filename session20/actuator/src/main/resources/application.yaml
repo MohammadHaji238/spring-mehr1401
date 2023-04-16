@@ -1,0 +1,23 @@
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  info:
+    env:
+      enabled: true
+
+#info:
+#  app:
+#    name: product
+#    version: 4.0.0
+#    author: hh
+#    description: sdsdsdsdsdsd
+spring:
+  security:
+    user:
+      name: admin
+      password: 123456
