@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    jdbc_url: jdbc:mysql://localhost:3306/spring_batch2
+    username: root
+    password: 1234
+  students:
+    jdbc_url: jdbc:mysql://localhost:3306/spring_batch
+    username: root
+    password: 1234
+  batch:
+    job:
+      enabled: true
+
+#  batch:
+#    jdbc:
+#      initialize-schema: always
