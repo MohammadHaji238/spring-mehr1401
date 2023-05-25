@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="869e057a-27b4-4a4a-abbd-ae9ced3fcd57" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/discount/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discount/src/main/java/ir/digixo/DiscountApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discount/src/test/java/ir/digixo/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../session10" beforeDir="false" afterPath="$PROJECT_DIR$/../../session10" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/java/ir/digixo/ProductApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/ir/digixo/ProductApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../session25/digixoservices5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../session25/digixoservices5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../session25/digixoservices5/product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../session25/digixoservices5/product/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../session25/digixoservices5/product/src/main/java/ir/digixo/ProductApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../session25/digixoservices5/product/src/main/java/ir/digixo/ProductApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -28,12 +32,16 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -64,10 +72,34 @@
     "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "C:/Users/Admin/IdeaProjects/spring/5/session26/digixoservices5",
     "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "1d04ce949642e6cfe5afbea818c9d105"
+    "spring.configuration.checksum": "203f307aef3423840ae7a9a7ce9040b2"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\IdeaProjects\spring\5\session26\digixoservices5\discount\src\main\resources" />
+      <recent name="C:\Users\Admin\IdeaProjects\spring\5\session26\digixoservices5\discount\src\main\java\ir\digixo" />
+      <recent name="C:\Users\Admin\IdeaProjects\spring\5\session26\digixoservices5\product\src\main\java\ir\digixo" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ir.digixo.entity" />
+      <recent name="ir.digixo.dto" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ProductApplication">
+    <configuration name="DiscountApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="discount" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ir.digixo.DiscountApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ir.digixo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="product" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ir.digixo.ProductApplication" />
@@ -84,6 +116,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ProductApplication" />
+        <item itemvalue="Spring Boot.DiscountApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -98,7 +131,9 @@
       <workItem from="1683996603095" duration="2844000" />
       <workItem from="1684036444799" duration="699000" />
       <workItem from="1684055224081" duration="1754000" />
-      <workItem from="1684593387309" duration="1507000" />
+      <workItem from="1684593387309" duration="1235000" />
+      <workItem from="1684595682303" duration="5721000" />
+      <workItem from="1684676291415" duration="662000" />
     </task>
     <servers />
   </component>
